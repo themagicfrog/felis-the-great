@@ -20,7 +20,6 @@ export function Meters() {
           <div className="meter" key={resource} data-resource={resource}>
             <div className="meter-head">
               <span className="meter-label">{label}</span>
-              <span className="meter-value">{value}</span>
             </div>
             <div
               className="meter-track"
