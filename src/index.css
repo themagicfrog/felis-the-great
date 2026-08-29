@@ -1,6 +1,6 @@
 :root {
   color-scheme: dark;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: "Times New Roman", serif;
   line-height: 1.5;
 
   --bg: #1a1a1a;
@@ -9,7 +9,7 @@
   --track: #333333;
 
   --population: #4477cc;
-  --money: #ccaa33;
+  --money: #fad037;
   --happiness: #cc4444;
   --materials: #44aa55;
 }
@@ -44,10 +44,11 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-  width: 100%;
+  width: 80%;
   max-width: 56rem;
   margin: 0 auto;
   flex: none;
+  top
 }
 
 .meter-head {
@@ -127,3 +128,29 @@ body {
   left: 28%;
   width: 42%;
 }
+.happy {
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  width: 42%;
+}
+.money {
+ position: absolute;
+  top: 100%;
+  right: 35%;
+  width: 42%;
+  height: 42%;
+}
+.pop{
+position: absolute;
+  top: 100%;
+  right: 10%;
+  width: 42%;
+  height: 42%
+ }
+ .mats{
+ position: absolute;
+  top: 100%;
+  right: 66%;
+  width: 42%;
+  height: 42%}
