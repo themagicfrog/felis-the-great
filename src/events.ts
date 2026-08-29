@@ -52,27 +52,27 @@ export const EVENTS: GameEvent[] = [
   {
     id: 'event-5',
     citizen: '/citizen5.png',
-    text: 'Event 5 text',
+    text: 'Good day your majesty, I am the duke of Meowlia, that bastard duke of Furcar has been stealing my people from their own homes as an intimidation technique, all to get his damned sheep back, SHEEP, please knock some reason into that fool before I go and claw his tail off myself.',
     choices: [
-      { label: '1', effects: { money: 15, happiness: -10 } },
-      { label: '2', effects: { happiness: 20, money: -30, population: 5 } },
+      { label: 'He sounds terrible, of course I will help', effects: { population: 25, materials:-35 } },
+      { label: 'Have you considered that you were the one who stole the sheep', effects: { happiness: 40, money: -20, population: -20 } },
     ],
   },
   {
     id: 'event-6',
     citizen: '/citizen6.png',
-    text: 'Event 6 text',
+    text: 'Hello your highness. this is extremely urgent, our sacred sheep blessed by the magnaminous lord KITAM, their lineage of fleecy glory has existed in our area for the past 40 sun cycles. but the issue is that we only have one breeding ewe left after those blasphemers from Mewtropolis stole nearly all of our glorious sheep. Please do something before they get striked down from the heavens as the terrible people they are.',
     choices: [
-      { label: '1', effects: { money: 15, happiness: -10 } },
-      { label: '2', effects: { happiness: 20, money: -30, population: 5 } },
+      { label: 'that sounds terrible!, I will notify them immidiately', effects: { money: 15, happiness: -10 } },
+      { label: 'werent you the ones that took their people as recompense?', effects: { happiness: 20, money: -20, population: 5 } },
     ],
   },
   {
     id: 'event-7',
     citizen: '/citizen7.png',
-    text: 'Event 7 text',
+    text: 'Hello Felis.',
     choices: [
-      { label: '1', effects: { money: 15, happiness: -10 } }
+      { label: '1', effects: { money: 15 } }
     ],
   }
 ]
