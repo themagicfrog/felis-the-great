@@ -8,10 +8,10 @@ export const MIN = 0
 export const MAX = 100
 
 const INITIAL: Record<Resource, number> = {
-  population: 20,
-  money: 50,
-  happiness: 50,
-  materials: 50,
+  population: 75,
+  money: 75,
+  happiness: 75,
+  materials: 75,
 }
 
 
@@ -65,8 +65,6 @@ export const useGame = create<GameState>((set, get) => ({
   reset: () => set({ resources: { ...INITIAL }, eventIndex: 0 }),
 }))
 
-// Dev convenience: poke the meters from the browser console.
-//   game.getState().adjust('money', -20)
 if (import.meta.env.DEV) {
   ;(globalThis as unknown as { game: typeof useGame }).game = useGame
 }
