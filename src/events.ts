@@ -70,9 +70,9 @@ export const EVENTS: GameEvent[] = [
   {
     id: 'event-7',
     citizen: '/citizen7.png',
-    text: 'Hello Felis. Im sure that you have experianced the pains of rulership at this point, while your glories are rich, the responsibility weighs heavy. basically, your perfect day is not here, are you ready to actually have a perfect day?  ',
+    text: 'Hello Felis.',
     choices: [
-      { label: 'Meow', effects: { money: 15 } }
+      { label: '1', effects: { money: 15 } }
     ],
   }
 ]
