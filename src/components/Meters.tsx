@@ -34,6 +34,11 @@ export function Meters() {
           </div>
         )
       })}
+
+      <img className="pop" src="/population.png" alt="" aria-hidden />
+      <img className="money" src="/money.png" alt="" aria-hidden />
+      <img className="happy" src="/happy.png" alt="" aria-hidden />
+      <img className="mats" src="/mats.png" alt="" aria-hidden />
     </div>
   )
 }
