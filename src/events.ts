@@ -25,28 +25,28 @@ export const EVENTS: GameEvent[] = [
   {
     id: 'event-2',
     citizen: '/citizen2.png',
-    text: 'Hey your majesty, me and my friend have a very large conundrum that we need your absolute command to determine. It was a very terrible Saturday when this happened you see, a group of vagrants encountered us in the West Forest, they had these hats! We couldn\'t get a good look at their faces, they were attacking us you see, they were large and pointed and jingly. The problem is that afterward we couldn't determine whether the criminals were of elvish descent or gnome descent, what are your thoughts? This is terribly important to the state of our friendship and the economy of the kingdom!',
+    text: 'Hey your majesty, me and my friend have a very large conundrum that we need your absolute command to determine. It was a very terrible Saturday when this happened you see, a group of vagrants encountered us in the West Forest, they had these hats! We couldn\'t get a good look at their faces, they were attacking us you see, they were large and pointed and jingly. The problem is that afterward we couldn\'t determine whether the criminals were of elvish descent or gnome descent, what are your thoughts? This is terribly important to the state of our friendship and the economy of the kingdom!',
     choices: [
-      { label: '1', effects: { money: 12, materials: -10 } },
-      { label: '2', effects: { happiness: 15, materials: -15 } },
+      { label: 'Gnome', effects: { money: -20 } },
+      { label: 'Elvish', effects: { happiness: 15, money: 5 } },
     ],
   },
   {
     id: 'event-3',
     citizen: '/citizen3.png',
-    text: 'Event 3 text',
+    text: 'Your Majesty! Can you finally tell us when you\'re going to end aid to the North County from our enemies! The kind citizens of our town have not been able to starve starting from last Sunday, which is of course not accounting for their limited food supply which hadn\'t ran out this saturday. Which is what I would say if it wasn\'t not the current situation, because the opposite is happening! So that is why I need the share of gold written on this contract.',
     choices: [
-      { label: '1', effects: { money: 15, happiness: -10 } },
-      { label: '2', effects: { happiness: 20, money: -20, population: 5 } },
+      { label: 'Of course', effects: { money: -15, population: 20 } },
+      { label: 'No, I\'m not a fool', effects: { population: -20 } },
     ],
   },
   {
     id: 'event-4',
     citizen: '/citizen4.png',
-    text: 'Event 4 text',
+    text: 'Your Highness, my little boy got lost in the West Forest a couple of days ago and I haven\'t seen him since. Since you are the person with the largest knowledge of the kingdom, could you have any idea what happened to him? Please, I\'m so worried for him…',
     choices: [
-      { label: '1', effects: { money: 15, happiness: -10 } },
-      { label: '2', effects: { happiness: 20, money: -20, population: 5 } },
+      { label: 'I am afraid that he may be in the next realm over…', effects: { money: 10, happiness: -40 } },
+      { label: 'Actually someone found a child in the forest last week…', effects: { happiness: 30, money: -10, population: 5 } },
     ],
   },
   {

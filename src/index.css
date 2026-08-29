@@ -41,6 +41,7 @@ body {
 /* ---- resource meters ---- */
 
 .meters {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
@@ -65,23 +66,8 @@ body {
   text-overflow: ellipsis;
 }
 
-.meter-row {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.meter-icon {
-  width: 1.75rem;
-  height: 1.75rem;
-  flex: none;
-  object-fit: contain;
-  image-rendering: pixelated;
-}
-
 .meter-track {
-  flex: 1;
-  min-width: 0;
+  width: 100%;
   height: 1.1rem;
   background: var(--track);
 }
@@ -181,32 +167,34 @@ body {
   left: 23.2%;
   width: 52%;
 }
-.happy {
+/* ---- resource icons ---- */
+/* Anchored to .meters, so they track the bars at any window width.
+   Each column is (100% - 3rem) / 4 wide, so one column + gap steps by
+   25% + 0.25rem; right: 0 is the last column's right edge. */
+.pop,
+.money,
+.happy,
+.mats {
   position: absolute;
-  top: 100%;
-  right: 50%;
-  width: 42%;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  image-rendering: pixelated;
 }
-.money {
- position: absolute;
-  top: 100%;
-  right: 35%;
-  width: 42%;
-  height: 42%;
+
+.pop   { right: calc(75% + 0.75rem); }
+.money { right: calc(50% + 0.5rem); }
+.happy { right: calc(25% + 0.25rem); }
+.mats  { right: 0; }
+
+/* two-column layout: happiness and materials drop to the second row */
+@media (max-width: 34rem) {
+  .pop   { right: calc(50% + 0.5rem); }
+  .money { right: 0; }
+  .happy { right: calc(50% + 0.5rem); top: 4.1rem; }
+  .mats  { right: 0; top: 4.1rem; }
 }
-.pop{
-position: absolute;
-  top: 100%;
-  right: 10%;
-  width: 42%;
-  height: 42%
- }
- .mats{
- position: absolute;
-  top: 100%;
-  right: 66%;
-  width: 42%;
-  height: 42%}
 
 .citizen {
   position: absolute;

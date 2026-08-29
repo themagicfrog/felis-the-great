@@ -29,11 +29,7 @@ export default function App() {
             ))}
           </div>
         </div>
-       <img className="mats" src="/mats.png" alt="materials" />
-       <img className="money" src="/money.png" alt="dough"/>
-       <img className="pop" src="/population.png" alt="cats"/>
-       <img className="happy" src="/happy.png"/>
-    </div>
+      </div>
     </main>
   )
 }

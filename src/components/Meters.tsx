@@ -7,13 +7,6 @@ const LABELS: Record<Resource, string> = {
   materials: 'Materials',
 }
 
-const ICONS: Record<Resource, string> = {
-  population: '/population.png',
-  money: '/money.png',
-  happiness: '/happy.png',
-  materials: '/mats.png',
-}
-
 export function Meters() {
   const resources = useGame((s) => s.resources)
 
@@ -28,22 +21,24 @@ export function Meters() {
             <div className="meter-head">
               <span className="meter-label">{label}</span>
             </div>
-            <div className="meter-row">
-              <img className="meter-icon" src={ICONS[resource]} alt="" aria-hidden />
-              <div
-                className="meter-track"
-                role="meter"
-                aria-label={label}
-                aria-valuenow={value}
-                aria-valuemin={0}
-                aria-valuemax={MAX}
-              >
-                <div className="meter-fill" style={{ width: `${(value / MAX) * 100}%` }} />
-              </div>
+            <div
+              className="meter-track"
+              role="meter"
+              aria-label={label}
+              aria-valuenow={value}
+              aria-valuemin={0}
+              aria-valuemax={MAX}
+            >
+              <div className="meter-fill" style={{ width: `${(value / MAX) * 100}%` }} />
             </div>
           </div>
         )
       })}
+
+      <img className="pop" src="/population.png" alt="" aria-hidden />
+      <img className="money" src="/money.png" alt="" aria-hidden />
+      <img className="happy" src="/happy.png" alt="" aria-hidden />
+      <img className="mats" src="/mats.png" alt="" aria-hidden />
     </div>
   )
 }
