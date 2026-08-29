@@ -47,11 +47,6 @@ body {
   gap: 1rem;
   width: 80%;
   max-width: 56rem;
-<<<<<<< HEAD
-  width: 100%;
-  max-width: 72rem;
-=======
->>>>>>> c0da9085dd9002568d2f05eeaee65733df2a0f18
   margin: 0 auto;
   flex: none;
 }
@@ -61,7 +56,7 @@ body {
   align-items: baseline;
   gap: 0.4rem;
   margin-bottom: 0.5rem;
-  font-size: 2rem;
+  font-size: 1rem;
   color: #000000;
 }
 
@@ -174,8 +169,7 @@ body {
   position: absolute;
   top: -30%;
   left: 86.7%;
-  width: 72%;
-  height: 115%
+  width: 52%;
   z-index: -1;
 }
 
@@ -199,17 +193,11 @@ body {
 .happy,
 .mats {
   position: absolute;
-<<<<<<< HEAD
-  top: 100%;
-  right: 50%;
-  width: 50%;
-=======
   top: 0;
   width: 2rem;
   height: 2rem;
   object-fit: contain;
   image-rendering: pixelated;
->>>>>>> c0da9085dd9002568d2f05eeaee65733df2a0f18
 }
 
 .pop   { right: calc(75% + 0.75rem); }
@@ -224,22 +212,6 @@ body {
   .happy { right: calc(50% + 0.5rem); top: 4.1rem; }
   .mats  { right: 0; top: 4.1rem; }
 }
-<<<<<<< HEAD
-.pop{
-position: absolute;
-  top: 100%;
-  right: 10%;
-  width: 42%;
-  height: 42%
- }
- .mats{
- position: absolute;
-  top: 100%;
-  right: 66%;
-  width: 51%;
-  height: 52%}
-=======
->>>>>>> c0da9085dd9002568d2f05eeaee65733df2a0f18
 
 .citizen {
   position: absolute;
