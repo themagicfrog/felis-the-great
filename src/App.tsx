@@ -8,6 +8,7 @@ export default function App() {
         <div className="throne">
           <img className="sofa" src="/sofa.png" alt="" />
           <img className="cat" src="/cat.png" alt="The cat king" />
+          <img className="citizen" src="/citizen.png" alt="" />
         </div>
       </div>
     </main>
