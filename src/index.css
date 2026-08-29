@@ -44,16 +44,10 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-<<<<<<< HEAD
   width: 80%;
   max-width: 56rem;
-=======
-  width: 100%;
-  max-width: 72rem;
->>>>>>> 010a10fb5c78238f70e6eb488345603f06a849e0
   margin: 0 auto;
   flex: none;
-  top
 }
 
 .meter-head {
@@ -71,7 +65,23 @@ body {
   text-overflow: ellipsis;
 }
 
+.meter-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.meter-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  flex: none;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
 .meter-track {
+  flex: 1;
+  min-width: 0;
   height: 1.1rem;
   background: var(--track);
 }

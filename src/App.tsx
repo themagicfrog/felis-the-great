@@ -15,7 +15,7 @@ export default function App() {
           <img className="stainedglass" src="/stainedglass.png" alt="" />
           <img className="sofa" src="/sofa.png" alt="" />
           <img className="cat" src="/cat.png" alt="" />
-          <img className="citizen" src="/citizen.png" alt="" />
+          <img className="citizen" src={event.citizen} alt="" key={event.id} />
           <div className="choices">
             {event.choices.map((choice, i) => (
               <button
