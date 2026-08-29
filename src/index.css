@@ -44,13 +44,10 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-<<<<<<< HEAD
   width: 80%;
   max-width: 56rem;
-=======
   width: 100%;
   max-width: 72rem;
->>>>>>> 010a10fb5c78238f70e6eb488345603f06a849e0
   margin: 0 auto;
   flex: none;
   top
@@ -61,7 +58,7 @@ body {
   align-items: baseline;
   gap: 0.4rem;
   margin-bottom: 0.5rem;
-  font-size: 1rem;
+  font-size: 2rem;
   color: #000000;
 }
 
@@ -153,7 +150,8 @@ body {
   position: absolute;
   top: -30%;
   left: 86.7%;
-  width: 52%;
+  width: 72%;
+  height: 115%
   z-index: -1;
 }
 
@@ -175,7 +173,7 @@ body {
   position: absolute;
   top: 100%;
   right: 50%;
-  width: 42%;
+  width: 50%;
 }
 .money {
  position: absolute;
@@ -195,8 +193,8 @@ position: absolute;
  position: absolute;
   top: 100%;
   right: 66%;
-  width: 42%;
-  height: 42%}
+  width: 51%;
+  height: 52%}
 
 .citizen {
   position: absolute;
