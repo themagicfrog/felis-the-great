@@ -101,6 +101,26 @@ body {
   color: #1a1a1a;
 }
 
+.intro {
+  position: absolute;
+  top: 6%;
+  left: 6%;
+  width: min(var(--throne-w), 88%);
+  z-index: 2;
+  padding: 1rem;
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: "Times New Roman", serif;
+  font-size: 1.05rem;
+}
+
+.intro-hint {
+  display: block;
+  margin-top: 0.75rem;
+  color: #666666;
+  font-size: 0.9rem;
+}
+
 .choices {
   position: absolute;
   top: 94%;
@@ -167,10 +187,7 @@ body {
   left: 23.2%;
   width: 52%;
 }
-/* ---- resource icons ---- */
-/* Anchored to .meters, so they track the bars at any window width.
-   Each column is (100% - 3rem) / 4 wide, so one column + gap steps by
-   25% + 0.25rem; right: 0 is the last column's right edge. */
+
 .pop,
 .money,
 .happy,
@@ -203,3 +220,36 @@ body {
   width: 52%;
 }
 
+
+/* ---- ending scene ---- */
+
+.ending {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.reallife {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.fadeout {
+  position: absolute;
+  inset: 0;
+  background: #000000;
+  opacity: 0;
+  pointer-events: none;
+  animation: fade-to-black 1.5s ease-in 2.5s forwards;
+}
+
+@keyframes fade-to-black {
+  to {
+    opacity: 1;
+  }
+}

@@ -40,7 +40,7 @@ export const useGame = create<GameState>((set, get) => ({
     const choice = event?.choices[index]
     if (!choice) return
     get().applyEffects(choice.effects)
-    set((s) => ({ eventIndex: (s.eventIndex + 1) % EVENTS.length }))
+    set((s) => ({ eventIndex: Math.min(s.eventIndex + 1, EVENTS.length) }))
   },
 
   adjust: (resource, delta) =>
