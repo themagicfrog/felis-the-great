@@ -31,6 +31,7 @@ body {
 }
 
 .stage {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -98,6 +99,43 @@ body {
   }
 }
 
+/* ---- textbox ---- */
+
+.textbox {
+  position: absolute;
+  top: 6rem;
+  right: 2rem;
+  width: min(26rem, 40%);
+  height: 13rem;
+  padding: 1rem;
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+.choices {
+  position: absolute;
+  top: 72%;
+  left: 146.2%;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.choice {
+  padding: 0.7rem 1rem;
+  border: none;
+  background: #ffffff;
+  color: #1a1a1a;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.choice:hover {
+  background: #d4d4d4;
+}
+
 /* ---- scene ---- */
 
 .scene {
@@ -113,6 +151,14 @@ body {
   width: min(100%, 34rem, calc((100svh - 9rem) * 1.0856));
   aspect-ratio: 710 / 654;
   margin-left: 6%;
+}
+
+.stainedglass {
+  position: absolute;
+  top: 5%;
+  left: 92.7%;
+  width: 40%;
+  z-index: -1;
 }
 
 .sofa {
@@ -131,7 +177,7 @@ body {
 .citizen {
   position: absolute;
   top: 8.5%;
-  left: 100.2%;
+  left: 150.2%;
   width: 52%;
 }
 

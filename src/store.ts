@@ -7,7 +7,7 @@ export const MIN = 0
 export const MAX = 100
 
 const INITIAL: Record<Resource, number> = {
-  population: 50,
+  population: 20,
   money: 50,
   happiness: 50,
   materials: 50,
